@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food item</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        img {
+            height: 250px;
+        }
+
+        .card {
+            transition: 500ms;
+        }
+
+        .grid-view .card:nth-child(even):hover {
+            transform: rotate(10deg);
+        }
+
+        .grid-view .card:nth-child(odd):hover {
+            transform: rotate(-10deg);
+        }   
+    </style>
+</head>
+
+<!-- onion: https://images.unsplash.com/photo-1618512496248-a07fe83aa8cb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b25pb258ZW58MHx8MHx8fDA%3D -->
+<!-- tomato: https://images.unsplash.com/photo-1524593166156-312f362cada0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHRvbWF0b3xlbnwwfHwwfHx8MA%3D%3D -->
+
+<body class="container">
+
+    <div class="container py-3">
+
+        <h1 class="text-center">Food item</h1>
+
+        <!-- grid start -->
+        <div class="mt-5 grid-view" style="display: flex; gap: 10px; justify-content: space-evenly;">
+
+            <!-- card start -->
+            <div class="card" style="width: 18rem; height: min-content;">
+                <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG90YXRvfGVufDB8fDB8fHww"
+                    class="card-img-top object-fit-cover" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Potato: The Versatile Comfort Food</h5>
+                    <p class="card-text">Acts as a perfect canvas for flavors; it can be mashed, fried, boiled, or baked
+                        to create hearty meals.</p>
+                    <p class="font-monospace"> <mark> <strong> Rs. 179 </strong> </mark></p>
+                    <a href="#" class="btn btn-outline-primary">Add to cart</a>
+                </div>
+            </div>
+            <!-- card end -->
+            <!-- card start -->
+            <div class="card" style="width: 18rem; height: min-content;">
+                <img src="https://images.unsplash.com/photo-1618512496248-a07fe83aa8cb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b25pb258ZW58MHx8MHx8fDA%3D"
+                    class="card-img-top object-fit-cover" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Onion: The Aromatic Foundation</h5>
+                    <p class="card-text">Provides a savory "umami" base; it becomes sweet when caramelized or sharp and
+                        crunchy when raw.</p>
+                    <p class="font-monospace"> <mark> <strong> Rs. 179 </strong> </mark></p>
+                    <a href="#" class="btn btn-outline-primary">Add to cart</a>
+                </div>
+            </div>
+            <!-- card end -->
+            <!-- card start -->
+            <div class="card" style="width: 18rem; height: min-content;">
+                <img src="https://images.unsplash.com/photo-1524593166156-312f362cada0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHRvbWF0b3xlbnwwfHwwfHx8MA%3D%3D"
+                    class="card-img-top object-fit-cover" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Tomato: The Juicy Flavor Enhancer</h5>
+                    <p class="card-text"> Adds moisture, vibrant color, and a tangy sweetness to sauces, salads, and
+                        stews.</p>
+                    <p class="font-monospace"> <mark> <strong> Rs. 179 </strong> </mark></p>
+                    <a href="#" class="btn btn-outline-primary">Add to cart</a>
+                </div>
+            </div>
+            <!-- card end -->
+
+        </div>
+        <!-- grid end -->
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>

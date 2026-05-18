@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="">
+
+    <style>
+        body {
+            padding: 5px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            background-color: aliceblue;
+            min-height: 100vh;
+        }
+
+        .container .heading {
+            font-size: 2rem;
+            margin-top: 5px;
+            text-align: center;
+        }
+
+        .container .description {
+            margin-top: 20px;
+            font-size: 1rem;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        .container .grid {
+            padding: 10px;
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .container .grid-item {
+            background-color: white;
+            overflow: hidden;
+            border-radius: 20px;
+            border: 2px solid white;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: 500ms;
+        }
+
+        .container .grid-item:hover {
+            box-shadow: 0px 0px 20px 0px gray;
+            transform: scale(0.95) rotate(360deg);
+            /* transform: rotate(-5deg); */
+        }
+
+        .container .grid-item>button:hover {
+            box-shadow: 0px 0px 20px 0px gray;
+            transform: rotate(360deg);
+            /* transform: rotate(-5deg); */
+        }
+
+
+        .grid-item img {
+            width: 100px;
+            height: 100px;
+            border-radius: 20px;
+        }
+
+        .grid-item>button {
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            background-color: yellow;
+            border: 1px solid yellowgreen;
+            cursor: pointer;
+            transition: 300ms;
+        }
+
+        .grid-item>button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .grid-item .money {
+            color: red;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- laptop https://m.media-amazon.com/images/I/71FXHAM+jWL._AC_UY327_QL65_.jpg -->
+    <!-- bag https://m.media-amazon.com/images/I/71maWXZscfL._AC_UY327_QL65_.jpg -->
+    <!-- keyboard https://m.media-amazon.com/images/I/61jJuQHSvYL._AC_UY327_QL65_.jpg -->
+
+    <!-- container start -->
+    <div class="container">
+        <h1 class="heading">Our products</h1>
+        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, ea.</p>
+
+        <div class="grid">
+            <!-- first item -->
+            <div class="grid-item">
+                <img src="https://m.media-amazon.com/images/I/71FXHAM+jWL._AC_UY327_QL65_.jpg" alt="">
+                <h3>Hp laptop</h3>
+                <div>Lorem ipsum dolor sit amet consectetur.</div>
+                <div class="money">$500</div>
+                <button>Add to cart</button>
+            </div>
+            <!-- first item end -->
+            <!-- second item -->
+            <div class="grid-item">
+                <img src="https://m.media-amazon.com/images/I/71maWXZscfL._AC_UY327_QL65_.jpg" alt="">
+                <h3>Hp laptop</h3>
+                <div>Lorem ipsum dolor sit amet consectetur.</div>
+                <div class="money">$500</div>
+                <button>Add to cart</button>
+            </div>
+            <!-- second item end -->
+
+            <!-- third item -->
+            <div class="grid-item">
+                <img src="https://m.media-amazon.com/images/I/61jJuQHSvYL._AC_UY327_QL65_.jpg" alt="">
+                <h3>Hp laptop</h3>
+                <div>Lorem ipsum dolor sit amet consectetur.</div>
+                <div class="money">$500</div>
+                <button>Add to cart</button>
+            </div>
+            <!-- third item end -->
+
+
+            <!-- fourth item -->
+            <div class="grid-item">
+                <img src="https://m.media-amazon.com/images/I/71FXHAM+jWL._AC_UY327_QL65_.jpg" alt="">
+                <h3>Hp laptop</h3>
+                <div>Lorem ipsum dolor sit amet consectetur.</div>
+                <div class="money">$500</div>
+                <button>Add to cart</button>
+            </div>
+            <!-- fourth item end -->
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
